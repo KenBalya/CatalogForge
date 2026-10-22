@@ -2,7 +2,6 @@ from pathlib import Path
 
 from catalogforge.__main__ import main
 
-
 ROOT = Path(__file__).resolve().parents[2]
 
 
