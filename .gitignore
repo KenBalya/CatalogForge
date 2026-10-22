@@ -1,0 +1,59 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Virtual environments
+.venv/
+venv/
+
+# Build artifacts
+build/
+dist/
+
+# Testing
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Raw datasets
+data/raw/*
+!data/raw/.gitkeep
+
+# Intermediate datasets
+data/staging/*
+!data/staging/.gitkeep
+
+# Processed datasets
+data/processed/*
+!data/processed/.gitkeep
+
+# ML artifacts
+artifacts/*
+!artifacts/.gitkeep
+
+# Local databases
+*.sqlite
+*.sqlite3
+*.db
+
+# Local logs
+*.log
+
+# Frontend
+node_modules/
+.next/

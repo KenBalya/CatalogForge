@@ -1,0 +1,57 @@
+[project]
+name = "catalogforge"
+version = "0.1.0"
+
+description = "Intelligent Product Identity Resolution at Scale"
+
+readme = "README.md"
+
+requires-python = ">=3.12,<3.13"
+
+dependencies = [
+    "polars>=1.0,<2.0",
+    "duckdb>=1.0,<2.0",
+    "pyarrow>=20.0,<30.0",
+    "pydantic>=2.10,<3.0",
+    "rapidfuzz>=3.0,<4.0",
+]
+
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0,<10.0",
+    "ruff>=0.11,<1.0",
+]
+
+
+[build-system]
+requires = ["uv_build>=0.12.3,<0.13"]
+build-backend = "uv_build"
+
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+
+extend-exclude = [
+    "data",
+    "artifacts",
+]
+
+
+[tool.ruff.lint]
+select = [
+    "E4",
+    "E7",
+    "E9",
+    "F",
+    "I",
+    "B",
+    "UP",
+]
+
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+addopts = "-ra"

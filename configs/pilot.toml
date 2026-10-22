@@ -1,0 +1,20 @@
+[run]
+seed = 42
+
+
+[pilot]
+master_catalog_limit = 100000
+
+query_limit = 5000
+
+retrieval_top_k = 20
+
+
+[paths]
+raw_dir = "data/raw"
+
+staging_dir = "data/staging"
+
+processed_dir = "data/processed"
+
+artifacts_dir = "artifacts"
